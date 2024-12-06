@@ -1,0 +1,117 @@
+.songs {
+    width: 100%;
+    height: 110vh;
+    margin: auto;
+    display: flex; /* Centrar contenido dentro de la sección */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    background-color: #333; /* Rojo translúcido */
+    cursor: context-menu;
+
+}
+.title_songs {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+
+.card-songs {
+    flex-direction: column;
+    background-color: #333; /* Rojo translúcido */
+    color: white;
+    display: flex;
+    justify-content: center; /* Centrar texto horizontalmente */
+    align-items: center; /* Centrar texto verticalmente */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.mas_reproducciones {
+    background: hsla(0, 0%, 100%, .05);
+    width: 450px;
+    height: 500px;
+    border-radius: 0.7rem;
+    margin: auto;
+    color: white;
+    padding: 2rem;
+}
+
+.info_mas_reproducciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid white;
+    padding: 1rem 0;
+}
+
+.info_mas_reproducciones:nth-child(5) {
+    border-bottom: none;
+}
+
+.info_mas_reproducciones .detalle {
+    width: 64px;
+    margin: 0;
+}
+
+.info_mas_reproducciones .titulo_detalle {
+    font-weight: 500;
+    margin: 0;
+}
+
+.frase {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    cursor: context-menu;
+    font-family: cursive;
+    color: rgba(198, 136, 255, 0.975);
+}
+
+@media (max-width: 1024px) {
+.songs {
+    width: 100%;
+    height: 100vh;
+}
+.mas_reproducciones {
+    width: 500px;
+    height: 500px;
+}
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 800px) {
+.songs {
+    width: 100%;
+    height: 100vh;
+}
+.mas_reproducciones {
+    width: 500px;
+    height: 500px;
+}
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 650px) {
+.songs {
+    width: 100%;
+    height: 100vh;
+}
+.mas_reproducciones {
+    width: 300px;
+    height: 500px;
+}
+}
+@media (max-width: 500px) {
+.songs {
+    width: 100%;
+    height: 110vh;
+}
+.mas_reproducciones {
+    width: 300px;
+    height: 500px;
+}
+}

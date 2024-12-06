@@ -1,0 +1,245 @@
+/* Contenedor principal */
+.content {
+    margin-top: 70px;
+    position: relative; /* Necesario para que los elementos hijos con position absoluta se ubiquen dentro del contenedor */
+    height: 100vh; /* Altura completa de la pantalla */
+    
+}
+
+/* Imagen de fondo */
+.img_header {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Escala la imagen manteniendo su proporción */
+    position: absolute; /* Permite que otros elementos se superpongan */
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+/* Fondo azul con degradado */
+.fondo_azul {
+    position: absolute;
+    width: 100%;
+    height: 100%; /* Coincide con la altura de la imagen */
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #47474788 50%, #333);
+    z-index: 2; 
+}
+
+/* Contenido superpuesto */
+.info_header {
+    position: absolute; /* Permite colocarlo encima de la imagen */
+    bottom: 20px; /* Lo posiciona cerca del borde inferior */
+    left: 20px; /* Lo posiciona cerca del borde izquierdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    text-transform: uppercase;
+    z-index: 3; /* Coloca el texto sobre el fondo azul */
+    color: white; /* Asegúrate de que el texto sea visible */
+    cursor: context-menu;
+
+}
+
+/* Estilo del título */
+.info_header h1 {
+    font-family: var(--fuentetexto--);
+    font-weight: var(--boldtitulo--);
+    text-transform: capitalize;
+    font-size: 4.5rem;
+    line-height: 3.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilo de la etiqueta <samp> */
+.info_header samp {
+    font-family: var(--fuentetexto--);
+    font-weight: var(--boldtitulo--);
+    font-size: 2.5rem;
+}
+
+/* Botón */
+.btn {
+    background-color: var(--rojo--);
+    font-family: var(--fuentetexto--);
+    text-transform: uppercase;
+    color: var(--blanco--);
+    font-weight: bold;
+    width: 12rem; /* Ancho del botón */
+    margin: 1rem 0;
+    border: none;
+    padding: 10px 20px; /* Agrega un poco de espacio interno */
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Efecto hover para el botón */
+.btn:hover {
+    background-color: #ff4d4d; /* Cambia el color al pasar el ratón */
+    transform: scale(1.05); /* Agrega un pequeño efecto de zoom */
+}
+
+
+/*----------------biography----------------------*/
+.biography {
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+    display: flex; /* Centrar contenido dentro de la sección */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    background-color: #333; /* Rojo translúcido */
+    cursor: context-menu;
+
+}
+
+.card-biography {
+    width: 600px;
+    height: 300px;
+    flex-direction: column;
+    background-color: #333; /* Rojo translúcido */
+    color: white;
+    display: flex;
+    justify-content: center; /* Centrar texto horizontalmente */
+    align-items: center; /* Centrar texto verticalmente */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.nacimiento_edad_pais {
+    background: hsla(0, 0%, 100%, .05);
+    width: 90%;
+    height: 300px;
+    border-radius: 0.7rem;
+    margin: auto;
+    color: white;
+    padding: 2rem;
+}
+
+.info_nac_edad_pais {
+    font-family: var(--fuentetexto--);
+    font-weight: var(--boldtexto--);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid white;
+    gap: 1rem;
+    padding: 1.5rem 0;
+}
+
+.info_nac_edad_pais:nth-child(3) {
+    border-bottom: none;
+}
+
+.info_nac_edad_pais .detalle {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.info_nac_edad_pais .titulo_detalle {
+    font-weight: 500;
+    margin: 0;
+}
+
+.biography-Text {
+    background-color: #333;
+    min-width: 300px;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    cursor: context-menu;
+
+}
+
+.biography-title {
+    margin: 10px auto 30px 50px;
+    text-align: start;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.biography-description {
+    margin: 20px 50px 70px 50px;
+    text-align: start;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* Ajustes para pantallas medianas */
+
+
+
+@media (max-width: 1200px) {
+   .biography {
+        height: 70vh;    
+   } 
+.card-biography {
+    width: 600px;
+  }
+.biography-Text {
+    font-size: 24px;
+}
+
+
+}
+
+
+@media (max-width: 800px) {
+    .fondo_azul {
+    height: 101%; /* Coincide con la altura de la imagen */
+}
+   .biography {
+        height: 50vh;    
+   } 
+.card-biography {
+    width: 600px;
+  }
+.biography-Text {
+    font-size: 20px;
+}
+
+
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 650px) {
+    .card-biography {
+    width: 93%;
+    height: 310px;
+
+}
+.biography {
+    width: 86%;
+    height: 50vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.biography-Text {
+    font-size: 22px;
+}
+}
+@media (max-width: 500px) {
+    .card-biography {
+    width: 93%;
+    height: 310px;
+}
+.biography {
+    width: 86%;
+    height: 70vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.biography-Text {
+    font-size: 22px;
+}
+}

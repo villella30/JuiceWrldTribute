@@ -1,0 +1,111 @@
+.album_container {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px; /* Añade espacio en todo el contenedor */
+}
+
+.albums {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Centra los elementos */
+    width: 100%;
+    gap: 30px; /* Añade espacio entre las tarjetas */
+    margin: 10px;
+}
+
+.card_albums {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 5px 5px 5px;
+    background-color: gray;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s; /* Simplifica las transiciones */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.card_albums:hover {
+    transform: scale(1.05);
+    background-color: #f0a500;
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 1024px) {
+    .albums {
+        justify-content: space-around; /* Espaciado flexible */
+        gap: 15px;
+    }
+
+    .card_albums {
+        width: 260px;
+        height: 300px;
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .albums {
+        flex-direction: column; /* Cambia a disposición vertical */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card_albums {
+        width: 80%; /* Ocupa el 80% del ancho de la pantalla */
+        min-width: 250px; /* Limita el ancho máximo */
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 15px;
+    }
+}
+
+/* ---------------------------------------------------------------- */
+/* Ajustes para pantallas semi grande */
+@media (max-width: 1024px) {
+    .albums {
+        margin: 15px auto;
+        gap: 15px;
+
+    }
+
+    .card_albums {
+        width: 260px;
+        height: 300px;
+}
+}
+/* Ajustes para pantallas medianas */
+@media (max-width: 800px) {
+    .albums {
+        justify-content: space-around; /* Espaciado flexible */
+        gap: 15px;
+    }
+
+    .card_albums {
+        width: 260px;
+        height: 300px;
+    }
+}
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 650px) {
+    .albums {
+        flex-direction: column; /* Cambia a disposición vertical */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card_albums {
+        width: 80%; /* Ocupa el 80% del ancho de la pantalla */
+        min-width: 250px; /* Limita el ancho máximo */
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 15px;
+    }
+}
