@@ -6,7 +6,7 @@ export default function Albums() {
     <div className='album_container' id='albums'>
       <section className="albums">
 
-        <a href='https://www.youtube.com/playlist?list=OLAK5uy_kBiZlNm_vcQ5ervdG3U6RmFmLMlJ1Xv-U' target='_blank'>
+        <a href='https://www.youtube.com/playlist?list=OLAK5uy_kBiZlNm_vcQ5ervdG3U6RmFmLMlJ1Xv-U' target='_blank' rel="noreferrer">
 
           <div className="card_albums">
             <img className="detalle" src='/WoD.jpg' alt='WoD' />
@@ -17,7 +17,7 @@ export default function Albums() {
 
         </a>
 
-        <a href='https://www.youtube.com/playlist?list=OLAK5uy_mQiT0JSaOVpcFT6Wa24YNMMKeCX8_9-PU' target='_blank'>
+        <a href='https://www.youtube.com/playlist?list=OLAK5uy_mQiT0JSaOVpcFT6Wa24YNMMKeCX8_9-PU' target='_blank' rel="noreferrer">
 
           <div className="card_albums">
             <img className="detalle" src='/GB&GR.jpg' alt='GB&GR' />
@@ -28,7 +28,7 @@ export default function Albums() {
 
         </a>
 
-        <a href='https://www.youtube.com/playlist?list=OLAK5uy_nLOIXxxxLZncjq1gSIW-GvhboblseCpZg' target='_blank'>
+        <a href='https://www.youtube.com/playlist?list=OLAK5uy_nLOIXxxxLZncjq1gSIW-GvhboblseCpZg' target='_blank' rel="noreferrer">
 
           <div className="card_albums">
             <img className="detalle" src='/DRFL.png' alt='DRFL' />
@@ -43,7 +43,7 @@ export default function Albums() {
 
       <section className='albums'>
 
-        <a href='https://www.youtube.com/playlist?list=OLAK5uy_lfvPhayqdOxEPlyyZ-BNpFGKhPtbiAJLk' target='_blank'>
+        <a href='https://www.youtube.com/playlist?list=OLAK5uy_lfvPhayqdOxEPlyyZ-BNpFGKhPtbiAJLk' target='_blank' rel="noreferrer">
           <div className="card_albums">
             <img className="detalle" src='/LND.png' alt='LND' />
             <p className="titulo_album">Legends Never Die</p>
@@ -52,7 +52,7 @@ export default function Albums() {
           </div>
         </a>
 
-        <a href='https://www.youtube.com/playlist?list=OLAK5uy_kZ2MLSNGjLRXP7OfUMs23Qv57SBRTIZIk' target='_blank'>
+        <a href='https://www.youtube.com/playlist?list=OLAK5uy_kZ2MLSNGjLRXP7OfUMs23Qv57SBRTIZIk' target='_blank' rel="noreferrer">
           <div className="card_albums">
             <img className="detalle" src='/FD.png' alt='FD' />
             <p className="titulo_album">Fighting Demons</p>
@@ -62,7 +62,7 @@ export default function Albums() {
 
         </a>
 
-        <a href='https://www.youtube.com/playlist?list=OLAK5uy_nw82D86n7vX4tE7MBmPQeZdHPrc_26kIc' target='_blank'>
+        <a href='https://www.youtube.com/playlist?list=OLAK5uy_nw82D86n7vX4tE7MBmPQeZdHPrc_26kIc' target='_blank' rel="noreferrer">
           <div className="card_albums">
             <img className="detalle" src='/TPNE.png' alt='TPNE' />
             <p className="titulo_album">The Party Never Ends</p>
